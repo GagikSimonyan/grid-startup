@@ -1,0 +1,22 @@
+.plus {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 64px 16px;
+  background-color: #616161;
+  &__item {
+    color: #fff;
+    text-align: center;
+    span {
+      font-size: 36px;
+      display: block;
+      margin-bottom: 15px;
+    }
+  }
+}
+
+@media (max-width: 601px) {
+  .plus {
+    grid-template-columns: 1fr;
+    row-gap: 30px;
+  }
+}

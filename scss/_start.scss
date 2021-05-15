@@ -1,0 +1,41 @@
+.start {
+  min-height: 100vh;
+  background: url('./../images/mac.jpg') center/cover no-repeat;
+  padding: 10px 40px;
+  position: relative;
+  &__block {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  &__title {
+    color: #fff;
+    font-size: 64px;
+    margin-bottom: 40px;
+    font-weight: 400;
+  }
+  &__text {
+    color: #fff;
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+  &__link {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: rgba(255, 255, 255, 0.5);
+    color: #000;
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.8);
+    }
+  }
+  &__social {
+    position: absolute;
+    bottom: 80px;
+    i {
+      color: $color;
+      &:hover {
+        color: darken($color, 15%);
+      }
+    }
+  }
+}

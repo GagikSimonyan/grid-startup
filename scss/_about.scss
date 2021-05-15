@@ -1,0 +1,27 @@
+.about {
+  &__text {
+    margin-bottom: 70px;
+  }
+  &__info {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(auto, 1fr));
+    gap: 20px;
+  }
+  &__block {
+    i {
+      font-size: 64px;
+      margin-bottom: 30px;
+    }
+  }
+}
+
+.info__description {
+    margin-top: 25px;
+    line-height: 24px;
+}
+
+@media (max-width: 601px) {
+  .about__info {
+    grid-template-columns: 1fr;
+  }
+}
