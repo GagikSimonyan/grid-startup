@@ -9,7 +9,14 @@ burger.addEventListener('click', () => {
 
 li.forEach((item) => {
   item.addEventListener('click', () => {
-    burger.classList.toggle('active');
+    if (burger.classList.contains('active')) {
+      burger.classList.add('active');
+      menu.classList.add('active');
+    } else {
+      burger.classList.remove('active');
+      menu.classList.remove('active');
+    }
+    burger.classList.remove('active');
     menu.classList.remove('active');
   });
 });
